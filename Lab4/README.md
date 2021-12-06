@@ -27,3 +27,5 @@ import { WebPartContext } from '@microsoft/sp-webpart-base';
 1. Once completed, type `spfx-fast-serve`
 1. When prompted to do so, type `npm install`
 1. Once completed, run `npm run serve`
+
+## WRITE EVENTS IN CALENDAR
