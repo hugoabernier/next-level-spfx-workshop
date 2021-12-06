@@ -203,4 +203,8 @@ You can create source maps during the build. To do so, follow these steps:
 
 In our next lab, we'll apply everything we've done so far to create a web part.
 
-## Exercise 15: Create
+## Exercise 15: Create your own Dev Tenant
+
+Go to http://aka.ms/o365devprogram and follow the steps to create your own tenant. Use a name for yourself -- not your company name. For example, I used **Tahoe Ninjas**, not **Microsoft**.
+
+Follow the steps to create your tenant. We'll use the tenant in later labs.
