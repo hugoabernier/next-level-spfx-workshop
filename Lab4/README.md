@@ -29,3 +29,34 @@ import { WebPartContext } from '@microsoft/sp-webpart-base';
 1. Once completed, run `npm run serve`
 
 ## WRITE EVENTS IN CALENDAR
+
+> You thought you were finished, didn't you?
+
+## Exercise 3: Get Graph Permissions
+
+1. From your **dev tenant browser** profile, go to https://developer.microsoft.com/en-us/graph/graph-explorer
+1. Select **Sign-in to Graph Explorer**
+1. Search for **All events in my calendar**
+1. Click on **Run query**
+1. You should receive events (you did create events, right?). You may also get permission denied.
+1. Select **Modify permissions**
+1. Select the **Calendars.Read** and grant permissions
+
+## Exercise 4: Add Calendar.Read permissions to the manifest
+
+1. From Visual Studio Code, go to `config\package-solution.json`
+1. Under `"isDomainIsolated": false`, add the following code (don't forget to add a `,` at the end of the line above (e.g: `false,`))
+    ```json
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Calendars.Read"
+      }
+    ],
+    ```
+1. Build your web part using `gulp build`
+1. Bundle your web part using `gulp bundle --ship`
+1. Package your web part using `gulp package-solution --ship`
+1. Upload the `spfx-next-level.sppkg` file, found in `sharepoint\solution` to your app catalog (most likely located at https://yourtenant.sharepoint.com/sites/appcatalog/AppCatalog)
+1. Go to your tenant's SharePoint Admin Portal (e.g.: yourtenant-admin.sharepoint.com)
+1. Under **Advanced** > **API Access** look for a request to approve `Calendars.Read`. Select it and select **Approve**.
