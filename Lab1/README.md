@@ -71,8 +71,13 @@ To install the SharePoint Framework Yeoman generator globally:
 1. Don't panic, the installation is very quick. You might even believe that there was an error, but if you see **Updated 1 package in x.xxxs**, you were successful.
 1. When the installation is complete, enter `tsc --version`, followed by <kbd>Enter</kbd>. You should see **Version 4.5.2**.
 
+## Exercise 8: Install CLI for Microsoft 365
 
-## Exercise 8: Install essential Visual Studio Code extensions
+1. From the command prompt, enter the following command: `npm i -g @pnp/cli-microsoft365`, followed by <kbd>Enter</kbd>.
+1. When the installation is complete, enter `m365`, followed by <kbd>Enter</kbd>.
+1. If it doesn't scream at you, you are good!
+
+## Exercise 9: Install essential Visual Studio Code extensions
 
 1. Launch **Visual Studio Code**.
 1. Open the **Extensions** activity bar (or by enterping <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>X</kbd>)
@@ -85,7 +90,7 @@ To install the SharePoint Framework Yeoman generator globally:
     1. **Live Share**
     1. **GitHub Copilot**
 
-## Exercise 9: Experiment with TypeScript
+## Exercise 10: Experiment with TypeScript
 
 Let's start with a simple Hello World Node.js example. Create a new folder `HelloWorld` and launch **VS Code**.
 
@@ -114,7 +119,7 @@ code .
     console.log(message);
     ```
 
-## Exercise 11: Understand tsconfig.json
+## Exercise 12: Understand tsconfig.json
 
 So far in this tutorial, you have been relying on the TypeScript compiler's default behavior to compile your TypeScript source code. You can modify the TypeScript compiler options by adding a `tsconfig.json` file that defines the TypeScript [project settings](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) such as the [compiler options](https://www.typescriptlang.org/docs/handbook/compiler-options.html) and the files that should be included.
 
@@ -134,7 +139,7 @@ So far in this tutorial, you have been relying on the TypeScript compiler's defa
 1. When editing `tsconfig.json`, IntelliSense (`kb(editor.action.triggerSuggest)`) will help you along the way.
 1. By default, TypeScript includes all the `.ts` files in the current folder and sub-folders if the `files` attribute isn't included, so we don't need to list `helloworld.ts` explicitly.
 
-## Exercise 11: Change the build output
+## Exercise 12: Change the build output
 
 Having the generated JavaScript file in the same folder as the TypeScript source will quickly get cluttered on larger projects, so you can specify a different output directory.
 
@@ -153,7 +158,7 @@ Having the generated JavaScript file in the same folder as the TypeScript source
 1. Delete `helloworld.js` and run the command `tsc` with no options. You will see that `helloworld.js` is now placed in the `out` directory.
 
 
-## Exercise 11: Error checking
+## Exercise 13: Error checking
 
 TypeScript helps you avoid common programming mistakes through strong type checking. 
 
@@ -171,7 +176,7 @@ TypeScript helps you avoid common programming mistakes through strong type check
 2. The TypeScript compiler will complain with **'error TS2322: Type '2' is not assignable to type 'string'**.  You can see type checking errors in VS Code both in the editor (red squiggles with hover information) and the Problems panel (<kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>M</kbd>). The `[ts]` prefix lets you know this error is coming from the TypeScript language service.
 3. Undo your changes. We'll have plenty of opportunities to create real bugs later.
 
-## Exercise 11: Debugging
+## Exercise 14: Debugging
 
 VS Code has built-in support for TypeScript debugging. To support debugging TypeScript in combination with the executing JavaScript code, VS Code relies on [source maps](https://developer.mozilla.org/docs/Tools/Debugger/How_to/Use_a_source_map) for the debugger to map between the original TypeScript source code and the running JavaScript. 
 
@@ -195,6 +200,5 @@ You can create source maps during the build. To do so, follow these steps:
 1. The debugger will start a session, run your code, and display the "Hello World" message in the Debug console panel.
 1. In `helloworld.ts`, set a breakpoint by clicking on the left gutter of the editor. You will see a red circle if the breakpoint is set. Press <kbd>F5</kbd> again.
 1. Execution will stop when the breakpoint is hit and you'll be able to see debugging information such as variable values and the call stack in the Run view.
-
 
 In our next lab, we'll apply everything we've done so far to create a web part.
