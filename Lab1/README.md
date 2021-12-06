@@ -45,6 +45,8 @@ Node Version Manager will allow you to install multiple versions of Node.js on y
     Local version: 4.0.2
     ```
 
+> Note: You may not see a `Local version` if you're not currently in a project folder. That's ok!
+
 ## Exercise 5: Install Yeoman
 
 [Yeoman](https://yeoman.io/) helps you kick-start new projects, and prescribes best practices and tools to help you stay productive. SharePoint client-side development tools include a Yeoman generator for creating new web parts. The generator provides common build tools, common boilerplate code, and a common playground website to host web parts for testing.
@@ -201,10 +203,10 @@ You can create source maps during the build. To do so, follow these steps:
 1. In `helloworld.ts`, set a breakpoint by clicking on the left gutter of the editor. You will see a red circle if the breakpoint is set. Press <kbd>F5</kbd> again.
 1. Execution will stop when the breakpoint is hit and you'll be able to see debugging information such as variable values and the call stack in the Run view.
 
-In our next lab, we'll apply everything we've done so far to create a web part.
-
 ## Exercise 15: Create your own Dev Tenant
 
 Go to http://aka.ms/o365devprogram and follow the steps to create your own tenant. Use a name for yourself -- not your company name. For example, I used **Tahoe Ninjas**, not **Microsoft**.
 
 Follow the steps to create your tenant. We'll use the tenant in later labs.
+
+In our next lab, we'll apply everything we've done so far to create a web part.
