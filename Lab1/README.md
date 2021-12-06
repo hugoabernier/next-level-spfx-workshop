@@ -31,7 +31,7 @@ Node Version Manager will allow you to install multiple versions of Node.js on y
 1. You may get prompted to accept changes. This is expected.
 1. Once installation is complete, type `nvm use 14.18.2`, followed by <kbd>Enter</kbd>. If you get prompted to accept the changes, please do so.
     > NOTE: If you get an error, try launching an administrative command prompt and repeat the steps above.
-1. When the operation is complete, verify your current version of Node.js by entering `node --v`, followed by <kbd>Enter</kbd>. It should display `v14.18.2`.
+1. When the operation is complete, verify your current version of Node.js by entering `node -v`, followed by <kbd>Enter</kbd>. It should display `v14.18.2`.
 
 ## Exercise 4:  Install Gulp
 
@@ -202,3 +202,5 @@ You can create source maps during the build. To do so, follow these steps:
 1. Execution will stop when the breakpoint is hit and you'll be able to see debugging information such as variable values and the call stack in the Run view.
 
 In our next lab, we'll apply everything we've done so far to create a web part.
+
+## Exercise 15: Create
